@@ -1,0 +1,24 @@
+<html>
+<head>
+  <title> Github Scrapper </title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Slabo+27px" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Nunito" rel="stylesheet">
+</head>
+<body>
+  <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+  <div id="heading"> Github Profile Comparison! </div>
+  <div id="formdiv">
+  <form action="results" method="POST">
+    Enter Github UserName1:<br>
+    <input type="text" name="namesearch"></input><br>
+    Enter Github Username2:<br>
+    <input type="text" name="namesearch1"></input><br>
+    <input type="submit" name = "<i class='fa fa-arrow-right' aria-hidden='true'>submit">
+  </form>
+  </div>
+  <div id="footer">
+    Made by Dhruv Dangwal(@dhruvcoder96)
+  </div>
+</body>
+
+</html>

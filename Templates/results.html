@@ -1,0 +1,52 @@
+<html>
+<head>
+<link rel="stylesheet" href="{{url_for('static',filename='style.css')}} " type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Raleway|Slabo+27px" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster|Nunito" rel="stylesheet">
+</head>
+<body>
+  <div id="heading"> Github Profile Comparison! </div>
+  <div id="leftone">
+      <div id="image">
+          <img src="{{avatarurl}}" height="100px" width="100px"/>
+      </div>
+   <h1 id="username"><i class="fa fa-user" aria-hidden="true"></i>{{username}}</h1>
+   <p id="generaltext"><i class="fa fa-users" aria-hidden="true"></i>Followers:{{follower}}</p>
+   <p id="generaltext"><i class="fa fa-users" aria-hidden="true"></i>Following:{{following}}</p>
+   <p id="generaltext"><i class="fa fa-map-marker" aria-hidden="true"></i>Location:{{location}}</p>
+   <p id="generaltext"><i class="fa fa-addresscard-o" aria-hidden="true"></i>Bio:{{bio}}</p>
+   <p id="generaltext"><i class="fa fa-envelope" aria-hidden="true"></i>Email:{{email}}</p>
+   <a href="{{htmlurl}}">Visit Profile</a>
+   <p id="generaltext">Number of Repos:{{reponumber}}</p>
+   {% for rpnm,s,d in zipped %}
+   <div id="repo">
+     <h1>{{rpnm}}</h1>
+     <p>i class="fa fa-star" aria-hidden="true"></i>{{s}}</p>
+     <p>{{d}}</p>
+   </div>
+   {% endfor %}
+ </div>
+   <div id="rightone">
+       <div id="image">
+           <img src="{{avatarurl1}}" height="100px" width="100px"/>
+       </div>
+    <h1 id="username"><i class="fa fa-user" aria-hidden="true"></i>{{username1}}</h1>
+    <p id="generaltext"><i class="fa fa-users" aria-hidden="true"></i>Followers:{{follower1}}</p>
+    <p id="generaltext"><i class="fa fa-users" aria-hidden="true"></i>Following:{{following1}}</p>
+    <p id="generaltext"><i class="fa fa-map-marker" aria-hidden="true"></i>Location:{{location1}}</p>
+    <p id="generaltext"><i class="fa fa-addresscard-o" aria-hidden="true"></i>Bio:{{bio1}}</p>
+    <p id="generaltext"><i class="fa fa-envelope" aria-hidden="true"></i>Email:{{email1}}</p>
+    <a href="{{htmlurl1}}">Visit Profile</a>
+    <p id="generaltext">Number of Repos:{{reponumber1}}</p>
+    {% for rpnm,s,d in zipped1 %}
+    <div id="repo">
+      <h1>{{rpnm}}</h1>
+      <p><i class="fa fa-star" aria-hidden="true"></i>{{s}}</p>
+      <p>{{d}}</p>
+    </div>
+    {% endfor %}
+
+    </div>
+</body>
+<script src="https://use.fontawesome.com/0dd01455e5.js"></script>
+</html>

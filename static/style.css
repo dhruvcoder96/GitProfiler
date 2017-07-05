@@ -1,0 +1,106 @@
+body{
+  background:url("https://static.pexels.com/photos/176851/pexels-photo-176851.jpeg") no-repeat center center fixed;
+}
+
+#heading{
+  text-align: center;
+  font-family: 'Lobster', sans-serif;
+  font-size: 55px;
+  color:white;
+}
+
+#leftone{
+  width:40%;
+  position:absolute;
+  float:left;
+  display:inline-block;
+  left:0;
+  font-size:18px;
+  font-family: 'Nunito';
+  color: white;
+}
+
+#footer{
+  top:90%;
+  text-align: center;
+  background-color:white;
+  color:blue;
+  font-weight: bold;
+  position: absolute;
+  width:100%;
+  height:50px;
+  font-size: 20px;
+  
+}
+
+#rightone{
+  width:40%;
+  position:absolute;
+  float:right;
+  display:inline-block;
+  right:0;
+  font-size:18px;
+  font-family: 'Nunito';
+  color: white;
+}
+
+img{
+  border-radius: 100%;
+  border:solid orange 4px;
+  -webkit-transition: width 1s, height 1s, border 1s; /* Safari */
+    transition: width 1s, height 1s, border 1s;
+}
+
+img:hover{
+    height:120px;
+    width:120px;
+    border:dashed white 2px;
+}
+
+#username{
+  font-family: 'Slabo 27px', serif;
+  color:white;
+}
+
+#repo{
+  background-color:#27ae60;
+  border-radius: 5px;
+  font-size:18px;
+  font-family: 'Nunito';
+  color: white;
+}
+
+#a{
+  color:white;
+}
+#a:visited{
+  color:white;
+}
+
+#mainform{
+  color:white;
+}
+
+input, select, textarea{
+    color: green;
+    font-weight: bold;
+    font-family: 'Nunito',cursive;
+    font-size:20px;
+}
+
+#formdiv{
+  left:35%;
+  top:40%;
+  position:absolute;
+  background-color:#2c3e50;
+  border-radius: 5px;
+  width:400px;
+  align-items: center;
+  padding:5px;
+
+}
+form{
+  color:white;
+  font-family:'Raleway';
+  font-size:25px;
+}
